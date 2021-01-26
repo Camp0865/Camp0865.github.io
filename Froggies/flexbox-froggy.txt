@@ -185,4 +185,4 @@ justify-content: center;
 
 _____________________
 
-Or flex-flow: column-reverse wrap-reverse; works too? ; u; But it didn’t occur to me to use flex-flow until after when I was going through them all over again. I easily forget that property exists. I also had to look up a Flexbox CSS guide, because I forgot wrap-reverse was a thing, too. :’D This one tripped me up a while because of the wrap-reverse property,, not going to lie! D: 
+Or flex-flow: column-reverse wrap-reverse; works too? ; u; But it didn’t occur to me to use flex-flow until after when I was going through them all over again. I easily forget that property exists. I also had to look up a Flexbox CSS guide, because I forgot wrap-reverse was a thing, too. :’D This one tripped me up a while because of the wrap-reverse property, not going to lie! D: 
