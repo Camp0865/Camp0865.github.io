@@ -1,0 +1,188 @@
+
+
+Natalia Campbell, Group 2, 040909851,
+MTM6201 Responsive Web Design II.
+
+FLEXBOX FROGGY
+
+NOTE: I'm assumging the display: flex; thatb is required with all of them is just an automatic given. ; u;
+
+_____________________
+
+Question 1
+
+justify-content: flex-end;
+
+
+
+Question 2
+
+justify-content: center;
+
+
+
+Question 3
+
+justify-content: space-around;
+
+
+
+Question 4
+
+justify-content: space-between;
+
+
+
+Question 5
+
+align-items: flex-end;
+
+
+
+
+Question 6
+
+justify-content: center;
+align-items: center;
+
+
+
+
+Question 7
+
+justify-content: space-around;
+align-items:flex-end;
+
+
+
+Question 8
+
+flex-direction: row-reverse;
+
+
+
+
+Question 9
+
+flex-direction: column;
+
+
+
+
+Question 10
+
+flex-direction: row-reverse;
+justify-content: flex-end;
+
+
+
+
+Question 11
+
+flex-direction: column;
+justify-content: flex-end;
+
+
+
+
+Question 12
+
+flex-direction: column-reverse;
+justify-content: space-between;
+
+
+
+
+Question 13
+
+flex-direction: row-reverse;
+align-items: flex-end;
+justify-content: center;
+
+
+
+
+Question 14
+
+order: 3;
+
+
+
+Question 15
+
+order: -1;
+
+
+
+
+Question 16
+
+align-self: flex-end;
+
+
+
+
+Question 17
+
+order: 1;
+align-self: flex-end;
+
+
+
+
+Question 18
+
+flex-wrap: wrap;
+
+
+
+
+Question 19
+    
+flex-direction: column;
+flex-wrap: wrap;
+
+
+
+
+Question 20
+
+flex-flow: column wrap;
+
+
+
+
+Question 21 
+
+align-content: flex-start;
+
+
+
+
+
+Question 22
+
+align-content: flex-end;
+
+
+
+
+Question 23 
+
+flex-direction: column-reverse;
+align-content: center;
+
+
+
+
+Question 24
+
+flex-direction: column-reverse;
+flex-wrap: wrap-reverse;
+align-content: space-between;
+justify-content: center;
+
+
+_____________________
+
+Or flex-flow: column-reverse wrap-reverse; works too? ; u; But it didn’t occur to me to use flex-flow until after when I was going through them all over again. I easily forget that property exists. I also had to look up a Flexbox CSS guide, because I forgot wrap-reverse was a thing, too. :’D This one tripped me up a while because of the wrap-reverse property,, not going to lie! D: 
