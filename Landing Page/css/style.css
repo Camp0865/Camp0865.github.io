@@ -162,10 +162,8 @@ input {
 /* Had trouble getting these to line up, evemn with display inline. I definitely tried everything. ; n; Zoom to make it bigger. Margina nd padding to adjust space, or else it's too wide.*/
 input[type=checkbox]{
   display: inline;
-  height: 1rem;
-  width: 1rem;
   margin: 0;
-  padding: 0;
+  padding: 5%;
 }
 
 .terms #boxl {
