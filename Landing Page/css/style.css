@@ -119,6 +119,7 @@ margin-top: 2.5%;
 /* Fixing up the box for the apply section. I'm having a tough time getting the box shadow perfect, though. I'm not sure how to make it blur at the edges? Gosh. ; n; But yeah, border radius for rounded corners, too. */
 
 .apply{
+  background-color: white;
   border-radius: 25px;
   margin: 0 10% 10% 10%;
   padding: 5%;
@@ -163,7 +164,7 @@ input[type=checkbox]{
   display: inline;
   height: 3rem;
   width: 3rem;
-  zoom: 2;
+  zoom: 1;
   margin: 0;
   padding: 0;
 }
@@ -174,7 +175,7 @@ input[type=checkbox]{
   margin-top: 0;
 }
 
-/* The Drive button styles. Colours, width, bordewr radius for rounded corners, font weight bold for thicker lettering, and no border. */
+/* The Drive button styles. Colours, width, border radius for rounded corners, font weight bold for thicker lettering, and no border. */
 button{
   background-color: #57eeab;
   color: #333131;
