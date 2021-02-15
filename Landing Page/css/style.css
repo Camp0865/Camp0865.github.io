@@ -1,0 +1,524 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********** CUSTOM CSS STARTS HERE  ***********/
+
+
+/* GLOBALLY APPLIED CODE */
+
+/* Setting up the REM value, the font, the main font colour, and the line height. Set margin left to 9% to keep all elements consistent. I default to 15px automatically, because for some reason, it makes it easier to get both larger and smaller text using REM decimal values. Sometimes if I just use 11px, it won't size between certain decimal values. 15px works better for me ; u;. */
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #333131;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+.container  {
+  margin: 0 auto;
+}
+
+/* Fixing up element box sizing by overwriting the default setting. Clearfix for the float to keep elements contained peroperly. */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ******** MOBILE STYLES ******* */
+
+/* LOGO SECTION */
+
+/* Postioning mobile logo on the page according to mockup. */
+
+.logo img {
+width: 33%;
+margin: 9%;
+margin-bottom: 0;
+margin-top: 2.5%;
+}
+
+/* HEADER SECTION */
+
+/* Font size in the XD file says 60. So I placed it at 4rem, which equals 60. 1.6rem is 24, which is the size of the second heading according to the XD file. */
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.header h3 {
+  font-size: 1.6rem;
+}
+
+.header {
+  margin: 9%;
+}
+
+/* Adjusting image size and poistion. */
+.scoot {
+  width: 60%;
+  margin-left: 18%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+/*      CONTACT SECTION      */
+
+/* Fixing up the box for the apply section. I'm having a tough time getting the box shadow perfect, though. I'm not sure how to make it blur at the edges? Gosh. ; n; But yeah, border radius for rounded corners, too. */
+
+.apply{
+  border-radius: 25px;
+  margin: 0 10% 10% 10%;
+  padding: 5%;
+  box-shadow: 5px 5px 5px 3px #D0D0D0;
+}
+
+/* Setting up size and weight for apply section headers. */
+.apply h2 {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.apply h4 {
+  font-size: 1.06rem;
+}
+
+/* Mobile and desktop versions have two different headings. So I've hidden the second heading meant for the desktop version. */
+
+.hidden {
+  display: none;
+}
+
+/* CONTACT FORM */
+
+/* Adjusting the input forms. Padding for space. Font weight thinner. Border radius for rounded corners. Outline none so when you click it gets rid of that ugly blue box. */
+
+input {
+  background-color: #F4F4F5;
+  padding: 3% 3% 3% 3%;
+  font-size: 1.06rem;
+  font-weight: lighter;
+  border-radius: 11px;
+  margin-top: 3.8%;
+  width: 98%;
+  border: none;
+  outline: none;
+}
+
+
+/* Had trouble getting these to line up, evemn with display inline. I definitely tried everything. ; n; Zoom to make it bigger. Margina nd padding to adjust space, or else it's too wide.*/
+input[type=checkbox]{
+  display: inline;
+  height: 3rem;
+  width: 3rem;
+  zoom: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.terms #boxl {
+  font-size: 1.06rem;
+  display: inline;
+  margin-top: 0;
+}
+
+/* The Drive button styles. Colours, width, bordewr radius for rounded corners, font weight bold for thicker lettering, and no border. */
+button{
+  background-color: #57eeab;
+  color: #333131;
+  width: 98%;
+  font-size: 1.6rem;
+  padding: 3%;
+  border-radius: 11px;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  font-weight: bold;
+  border: none;
+}
+
+/* Link colour change and text decoration removal. */
+
+.orange {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+/* FOOTER SECTION */
+
+/* Main footer box. I have trouble making things bleed, so I had to add an overflow-x hidden to the globally applied codes and adjust margins. Without the weird padding/ marghins in this section, it would not appear as one solid colour. */
+.footer {
+  background-color: #fffd8c;
+  display: block;
+  width: 100%;
+  padding: 4% 9% 4% 9%;
+}
+
+.footer h3 {
+font-size: 1.25rem;
+font-weight: bold;
+margin-bottom: 3%;
+}
+
+.footer h4 {
+  font-size: 1.1rem;
+}
+
+/* INPUT FOR FOOTER SECTION */
+
+/* Getting the hours and city section into the right spot/ size. Button below is styled using similar properties as the drive button above. */
+
+.hours {
+  width: 25%;
+  margin-right: 10px;
+  margin-bottom: 0%;
+}
+.city {
+  width: 70%;
+}
+
+button#calc {
+  background-color: #ff8480;
+  color: #f7f7ff;
+  width: 98%;
+  font-size: 1.7rem;
+  padding: 1.3%;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 11px;
+  border: none;
+  margin-top: 2%;
+}
+/* Flexing out the social media icons to get them into position.*/
+
+.media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6%;
+}
+
+
+/* ********** TABLET STYLES *********** */
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+
+  /*      HEADER SECTION      */
+
+
+  /* Adjusting logo size and position for tablet. */
+  .logo {
+  width: 30%;
+  margin-left: 6%;
+  margin-bottom: 0;
+  }
+
+  /* Fixing header size and position. Line height adjustment. */
+  .header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2%;
+  margin-top: -10%;
+  margin-right: 45%;
+  line-height: 1.3;
+  }
+  
+  /* Fixing font size and position. */
+  .header h3 {
+  position: relative;
+  font-size: 1rem;
+  margin-right: 44%;
+  }
+
+  /* Fixing the image size and position.*/
+  .scoot {
+  margin-left: 10%;
+  margin-top: -2%;
+  width: 68%;
+  margin-bottom: -6%;
+  }
+
+
+  /*      CONTACT SECTION      */
+
+ /* Adjusting size and position of headers and apply section. */
+
+ .apply {
+  margin-bottom: -9%;
+ }
+
+ .apply h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+ }
+
+ .apply h4 {
+  font-size: 1.6rem;
+  margin-bottom: -1.5%;
+ }
+
+ /* CONTACT FORM */
+
+ /* Fixing space between input fields and checkbox. */
+
+ input {
+  margin-top: 2%;
+ }
+
+ input[type=checkbox]{
+ margin-top: 1.5%;
+ }
+
+
+ button{
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+ }
+
+ .applied {
+  text-align: center;
+ }
+
+
+ /*      FOOTER      */
+
+ /* Fixing footer position on page. Adjusting font sizes, and adjusting internal margins to more accurately positiom them. Negative margin used for eassier overriding of problem margin values. */
+
+  .footer {
+  margin-top: 20%;
+  }
+  
+  .footer h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 3%;
+  margin-top: -2%;
+  }
+  
+  .footer h4 {
+  font-size: 1.1rem;
+  }
+  
+  /* INPUT FOR FOOTER SECTION */
+
+  /* Adjusting inpute size, width, padding dimensions, and fixing the margins for spacing with the media icons. Again, negative margin values to more easily overwrite problem margin values. */
+  
+  .hours {
+  padding: 2%;
+  }
+  .city {
+  margin-right: 1%;
+  padding: 2%;
+  width: 40%;
+  }
+  
+  button#calc {
+  padding: 0.8%;
+  width: 30%;
+  }
+  
+  .media {
+  width: 45%;
+  margin: 2% auto 0;
+  margin-bottom: -2%;
+  }
+ }
+  /*      DESKTOP VERSION      */
+
+
+
+
+ @media screen and (min-width: 1010px) {
+
+  /*      HEADER SECTION      */
+
+  /* Mediat query is 1010 because the paghe breaks at 1034. Making the image a BG image instead and pushing logo to the right. Setting up flex for easy display change. Sizing and centering ther BG. Hiding the image used for mobile and tablet versions. Flexed out the content for easy display.*/
+
+  .logo {
+  margin-left: 7%;
+  width: 17%;
+  }
+
+  .scoot {
+  display: none;
+  }
+
+  .container {
+  background-image: url(../images/bg-image/scooter.svg);
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: 40%;
+  display: flex;
+  }
+
+  /* Adjusting the main heading positions and size. Needed to keep the line height here too because it'll rewrite itself if I don't.*/
+
+  .header h1 {
+  font-size: 4rem;
+  margin-bottom: 2%;
+  margin-top: -12%;
+  margin-right: 50%;
+  line-height: 1.3;
+  }
+  
+  /* Fixing font size and position. */
+
+  .header h3 {
+  font-size: 1.25rem;
+  margin-top: 3%;
+  margin-right: 50%;
+  }
+
+
+  /*      APPLY SECTION      */
+
+  /* The text changed from the mobile and tablet version to the desktop version. So I've hidden the mobile text and unset my previous display hidden proprty to display the new header option. */
+  .mobile {
+  display: none;
+  }
+  
+  .hidden {
+  display: unset;
+  }
+/* Adjusted size, position, and margin values to fit the headers onto the page perperly. */
+  .apply h2 {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 5%;
+  }
+  
+  .apply h4 {
+  font-size: 1.05rem;
+  margin-bottom: -1.5%;
+  }
+/* Needed to adjust the margin and paddig for it's new spot when flexed needed margin adjustments. */
+  .apply{
+  margin: 5% 7% 0 0;
+  padding: 2%;
+  padding-bottom: 0%;
+}
+  
+/* Adjusting the already applied paragraph size and position. */
+  
+.applied {
+font-size: 0.8rem;
+margin-bottom: 12%;
+}
+
+/*      FOOTER SECTION      */
+
+/* Flexing out the footer section so I can get everything in line easily. */
+
+.footer{
+display: flex;
+justify-content: space-between;
+margin-top: 4%;
+padding: 0;
+}
+
+/* Footer headers resized and moved/ -25 margin to fix an odd wide space that appears at 1000+ screen size. */
+
+.footer h3 {
+font-size: 1rem;
+font-weight: bold;
+margin-bottom: 3%;
+margin-top: -25%;
+}
+  
+.footer h4 {
+font-size: 0.9rem;
+}
+
+/* Adjusting colour, size, and font weight for the form items and the button. Margins set to zero because it helps the odd spacing issue at 1000+px. */
+.hours {
+width: 21%;
+font-size: 1rem;
+padding: 1.3%;
+color: grey;
+font-weight: 300;
+margin: 0;
+}
+
+.city{
+width: 30%;
+font-size: 1rem;
+font-weight: 300;
+padding: 1.3%;
+color: grey;
+font-weight: 300;
+margin-bottom: 0;
+}
+
+button#calc{
+width: 34%;
+font-size: 1.3rem;
+padding: 0.5%;
+margin-bottom: 0;
+}
+/* Padding/ margin here helps the spacing issue as well. */
+.left {
+margin-top: 10%;
+margin-left: 10%;
+padding-bottom: 1.2%;
+}
+
+/* Fixing the size and location of the media icons. */
+.media {
+margin-bottom: 3%;
+margin-right: 5%;
+width: 20%;
+padding-left: 5%;
+  
+}
+}

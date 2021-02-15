@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONTS -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- FILE LINKS -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Dash</title>
+</head>
+
+
+<!-- BODY SECTION -->
+<body>
+  <main>
+  <!-- LOGO -->
+  <div class="logo">
+    <img src="images/logo/logo.png" alt="Logo" class="logo-m">
+  </div>
+
+ <!-- MAIN HEADER SECTION -->
+
+  <!-- Container class to help wiuth BG implememntation later. -->
+  <div class="container">
+
+   <section class="header">
+      <h1>Want to be your own boss&#63;</h1>
+      <h3>Start today and make up to &dollar;30&sol;hr driving your own vehicle with Dash!</h3>
+      <div class="scootc">
+        <img class="scoot" src="../images/bg-image/scooter.svg" alt="Lady on a scooter SVG">
+      </div>
+      
+   </section>
+   
+  
+  <!-- CONTACT SECTION -->
+
+    <!-- CONTACT FORM -->
+      <div class="apply">
+          <h2>Apply Now</h2>
+          <h4 class="mobile">Enter your info below&#46;</h4>
+          <!-- Hidden header for desktop verion. -->
+          <h4 class="hidden">Enter your info below to get started&#46;</h4>
+
+
+      <form action="#" method="post">
+        <div>
+          <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+        </div>
+        <div>
+          <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+        </div>
+        <div>
+          <input type="text" id="phone" name="phone" placeholder="Phone number" required>
+        </div>
+        <div>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+        </div>
+
+        <!-- Checkbox section starts here. -->
+        <div class="terms">
+          <input type="checkbox" class="box" id="box">
+          <label for="box" class="box-label" id="box1">I agree to dash terms</label>
+        </div>
+          <button type="button">DRIVE WITH US</button>
+          <p class="applied">Already applied&#63; <a class="orange" href="#">Check your application status here</a></p>
+      </form>
+      </div>
+  </div>
+  </main>
+
+  <!-- FOOTER SECTION -->
+
+  <footer class="footer">
+    <div class="left">
+      <h3>See how much you can earn with Dash&#46;</h3>
+      <h4>how many hours do you want to drive with us this week&#63;</h4>
+  
+      <!-- CALCULATION FORM -->
+    
+      <form action="#" method="get" class="earn">
+         <input type="text" placeholder="Hours" class="hours" >
+          <input type="text" placeholder="City" class="city">
+          <button type="submit" class="calc" id="calc">CALCULATE</button>
+      </form>
+    </div>
+
+
+   <!-- MEDIA ICONS -->
+
+   <div class="media">
+    <img src="images/icons/facebook.svg" alt="facebook">  
+    <img src="images/icons/instagram.svg" alt="instagram">
+    <img src="images/icons/twitter.svg" alt="twitter">
+    <img src="images/icons/linkedin.svg" alt="linkedin"> 
+   </div>
+  </footer>
+</body>
+</html>
