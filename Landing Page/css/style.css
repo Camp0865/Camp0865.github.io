@@ -381,7 +381,7 @@ button#calc {
   /*      DESKTOP VERSION      */
 
 
- @media screen and (min-width: 1010px) {
+ @media screen and (min-width: 1010px){
 
   /*      HEADER SECTION      */
 
@@ -446,7 +446,7 @@ button#calc {
   }
 /* Needed to adjust the margin and paddig for it's new spot when flexed needed margin adjustments. */
   .apply{
-  margin: 5% 7% 0 0;
+  margin: 5% 7% 3% 0;
   padding: 2%;
   padding-bottom: 0%;
 }
