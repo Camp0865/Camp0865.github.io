@@ -81,7 +81,7 @@ html{
 
 /* LOGO SECTION */
 
-/* Postioning mobile logo on the page according to mockup. */
+/* Postioning mobile logo on the page according to mockup. UPDATE: Setting both the scooter image and the logo image to display block to fix a browser compatibility issue with display none being used. Without the block property, the images will break nad refuse to load in Chrome. Thanks, Chrome. */
 
 .logo img {
 width: 33%;
