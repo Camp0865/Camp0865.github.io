@@ -109,7 +109,7 @@ display: block;
   margin: 9%;
 }
 
-/* Adjusting image size and poistion. */
+/* Adjusting image size and poistion. Once again, display clock as a hotfix for browser reading issues in Chrome. */
 .scoot {
   width: 60%;
   margin-left: 18%;
@@ -163,23 +163,19 @@ input {
 }
 
 
-/* Had trouble getting these to line up, evemn with display inline. I definitely tried everything. ; n; Zoom to make it bigger. Margina nd padding to adjust space, or else it's too wide.*/
-input[type=checkbox]{
-  display: inline-block;
-  margin: 0;
-}
+/* Had trouble getting these to line up, evemn with display inline. I definitely tried everything. ; n;*/
 
 .terms #boxl {
   font-size: 1.06rem;
-  display: inline-block;
+  display: flex;
   margin-top: 0;
 }
 
 /* The Drive button styles. Colours, width, border radius for rounded corners, font weight bold for thicker lettering, and no border. */
 button{
+  width: 98%;
   background-color: #57eeab;
   color: #333131;
-  width: 98%;
   font-size: 1.6rem;
   padding: 3%;
   border-radius: 11px;
@@ -204,6 +200,12 @@ button{
   display: block;
   width: 100%;
   padding: 4% 9% 4% 9%;
+}
+
+/* Alternative media icons for desktop view hidden. */
+
+.mediaw {
+  display: none;
 }
 
 .footer h3 {
@@ -273,7 +275,7 @@ button#calc {
   line-height: 1.3;
   }
   
-  /* Fixing font size and position. */
+  /* Fixing font size and position. Posotion relative for easier movement on the page. */
   .header h3 {
   position: relative;
   font-size: 1rem;
@@ -310,7 +312,8 @@ button#calc {
 
  /* CONTACT FORM */
 
- /* Fixing space between input fields and checkbox. */
+ /* Fixing space between input fields and checkbox. No matter what I do, I can't gfet teh checkbox to display properly. So. RIP. :'D*/
+
 
  input {
   margin-top: 2%;
@@ -378,13 +381,11 @@ button#calc {
   /*      DESKTOP VERSION      */
 
 
-
-
  @media screen and (min-width: 1010px) {
 
   /*      HEADER SECTION      */
 
-  /* Mediat query is 1010 because the paghe breaks at 1034. Making the image a BG image instead and pushing logo to the right. Setting up flex for easy display change. Sizing and centering ther BG. Hiding the image used for mobile and tablet versions. Flexed out the content for easy display.*/
+  /* Media query is 1010 because the page breaks at 1034. Making the image a BG image instead and pushing logo to the right. Setting up flex for easy display change. Sizing and centering ther BG. Hiding the image used for mobile and tablet versions. Flexed out the content for easy display.*/
 
   .logo {
   margin-left: 7%;
@@ -461,6 +462,25 @@ margin-bottom: 12%;
 
 /* Flexing out the footer section so I can get everything in line easily. */
 
+
+/* Fixing footer float due to margin/padding changes and lack of content. */
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  display: inline-block;
+  padding-top: -20;
+}
+
+.media {
+  display: inline-block;
+ 
+}
+
 .footer{
 display: flex;
 justify-content: space-between;
@@ -468,20 +488,19 @@ margin-top: 4%;
 padding: 0;
 }
 
-/* Footer headers resized and moved/ -25 margin to fix an odd wide space that appears at 1000+ screen size. */
+/* Footer headers resized and moved.*/
 
 .footer h3 {
 font-size: 1rem;
 font-weight: bold;
 margin-bottom: 3%;
-margin-top: -25%;
 }
   
 .footer h4 {
 font-size: 0.9rem;
 }
 
-/* Adjusting colour, size, and font weight for the form items and the button. Margins set to zero because it helps the odd spacing issue at 1000+px. */
+/* Adjusting colour, size, and font weight for the form items and the button. */
 .hours {
 width: 21%;
 font-size: 1rem;
@@ -507,19 +526,22 @@ font-size: 1.3rem;
 padding: 0.5%;
 margin-bottom: 0;
 }
-/* Padding/ margin here helps the spacing issue as well. */
+/* Padding/ margin here to control the spotion of the content inside the footer. */
 .left {
-margin-top: 10%;
-margin-left: 10%;
-padding-bottom: 1.2%;
+  margin-top: 2%;
+  margin-bottom: 0.1%;
 }
 
-/* Fixing the size and location of the media icons. */
+/* Fixing the location of the media icons. */
 .media {
 margin-bottom: 3%;
 margin-right: 5%;
-width: 20%;
 padding-left: 5%;
   
 }
+
+.icon {
+  padding-left: 11%;
 }
+
+ }
