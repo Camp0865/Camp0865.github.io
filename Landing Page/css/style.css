@@ -544,4 +544,13 @@ padding-left: 5%;
   padding-left: 11%;
 }
 
+
+@media screen and (min-width: 1610px){
+
+  .apply {
+    margin-bottom: 10%;
+  }
+
+}
+
  }
